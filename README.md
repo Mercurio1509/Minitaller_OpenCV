@@ -79,3 +79,69 @@ plt.show()
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
+
+## Ecualizador de imágenes (Histograma)
+Este ecualizador se usa para una representación de la intensidad de una imagen. Por eso es que vamos a usar una imagen con un bajo contraste como la que se muestra a continuación.
+
+![imagen_equalizador](https://hackmd.io/_uploads/HkSL-buaa.jpg)
+
+La manera en la funciona es cuantificando el número de pixeles por cada valor considerado.
+
+Para el tutorial abra el archivo llamado `ecualizador.ipynb`. De igual manera este tutorial se divide en bloques.
+
+1. Corra el bloque 1 donde se importan las librerias y se lee la imagen de entrada.
+
+```ruby
+#Bloque 1
+#!pip install opencv-contrib-python
+
+import cv2 as cv
+import argparse
+import matplotlib.pyplot as plt
+ 
+src=cv.imread('imagen_equalizador.jpg')
+
+if src is None:
+    print('Could not open or find the image:', src)
+    exit(0)
+```
+
+2. En el segundo bloque podemos ver que la imagen se transforma a una paleta de color gris con la función `cvtColor()`
+
+```ruby
+#Bloque 2
+src = cv.cvtColor(src, cv.COLOR_BGR2GRAY)
+```
+
+3. Corremos el bloque 3 donde usaremos la función `equalizeHist()`.
+
+```ruby
+#Bloque 3
+dst = cv.equalizeHist(src)
+```
+4. Pasamos al bloque 4 donde finalmente se van a imprimir los resultados de la ecualización, como podrá observar se usa `cv.imshow()` para graficar, además de esta función se usa matplotlib, donde se hace un arreglo con la función `img2_rgb = cv.cvtColor(dst, cv.COLOR_BGR2RGB)` que hace pasar la imagen de BGR a RGB ya que matplotlib necesita que la imagen use este ultimo formato, a diferencia de OpenCV que usa el formato BGR.
+
+```ruby
+# Bloque 4
+cv.imshow('Source image', src)
+
+img1_rgb = cv.cvtColor(src, cv.COLOR_BGR2RGB)
+plt.imshow(img1_rgb)
+plt.show()
+
+
+cv.imshow('Equalized Image', dst)
+img2_rgb = cv.cvtColor(dst, cv.COLOR_BGR2RGB)
+plt.imshow(img2_rgb)
+plt.show()
+
+ 
+cv.waitKey(0)
+cv.destroyAllWindows()
+```
+
+Una vez hecho esto podra ver como la imagen se aclara de la siguiente manera
+
+![image](https://hackmd.io/_uploads/B1kZJM_pT.png)
+
+5. Ahora usted descargue una imagen de internet y guardela en la misma carpeta del repositorio, para poder asignar la imagen dentro del código vaya al bloque 1 y dentro de la variable `src=cv.imread('imagen_equalizador.jpg')` cambie la sección donde dice *imagen_equalizador.jpg* por el nombre de su imagen, observe los resultados.
