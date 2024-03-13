@@ -5,9 +5,11 @@ Para este minitaller aprenderemos algunas funciones básicas que podemos usar co
 * Jupyter Notebook.
 * Python 3.
 
-Primero debemos entrar a Jupyter Notebook en el siguiente [link](https://jupyter.org/try-jupyter/lab/) y copiar los archivos que se encuentran en este repositorio a una carpeta dentro del entorno de Jupyter como se muestra en la imagen.
+Primero debemos clonar este repositorio dentro de nuestra computadora para esto ejecute el comando `$ git clone https://github.com/Mercurio1509/VLSI_Tarea_1.git` dentro de la terminal. En Anaconda Navigator seleccione la opción de Jupyter Notebook y seleccione la opción que dice launch como se muestra en la siguiente imagen
+![image](https://github.com/Mercurio1509/Minitaller_OpenCV/assets/125401207/d43ee758-2b62-40a9-93a3-d2aff1e1e8f0)
 
-Una vez hecho esto podemos comenzar con el tutorial.
+
+Posterior a esto se abrirá nuestro navegador y las carpetas que tenemos en nuestra computadora, debemos seleccionar la carpeta del repositorio que acaba de clonar, una vez hecho esto podemos comenzar con el tutorial.
 
 ## Combinación de imágenes
 1. Abra dentro de jupyter el archivo llamado **mezclador.ipynb**. Dentro del script notará que está segmentado por bloques. 
