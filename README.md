@@ -143,7 +143,8 @@ cv.destroyAllWindows()
 
 Una vez hecho esto podra ver como la imagen se aclara de la siguiente manera:
 
-![image](https://github.com/Mercurio1509/Minitaller_OpenCV/assets/125401207/c3c64831-e16a-4fb8-b11b-52687909476c)
+![image](https://github.com/Mercurio1509/Minitaller_OpenCV/assets/125401207/5222afda-0bd7-4bff-9878-bd5336ddfc4a)
+
 
 
 5. Ahora usted descargue una imagen de internet y guardela en la misma carpeta del repositorio, para poder asignar la imagen dentro del código vaya al bloque 1 y dentro de la variable `src=cv.imread('imagen_equalizador.jpg')` cambie la sección donde dice *imagen_equalizador.jpg* por el nombre de su imagen, observe los resultados.
