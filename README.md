@@ -11,7 +11,7 @@ Una vez hecho esto podemos comenzar con el tutorial.
 
 ## Combinación de imágenes
 1. Abra dentro de jupyter el archivo llamado **mezclador.ipynb**. Dentro del script notará que está segmentado por bloques. 
-//Poner una imagen
+
 2. Corra el bloque 0, quitandole el # a los comandos de *pip install* donde se instalarán las bibliotecas necesarias para correr el programa.
 
 ```ruby
@@ -83,7 +83,8 @@ cv2.destroyAllWindows()
 ## Ecualizador de imágenes (Histograma)
 Este ecualizador se usa para una representación de la intensidad de una imagen. Por eso es que vamos a usar una imagen con un bajo contraste como la que se muestra a continuación.
 
-![imagen_equalizador](https://hackmd.io/_uploads/HkSL-buaa.jpg)
+![imagen_equalizador](https://github.com/Mercurio1509/Minitaller_OpenCV/assets/125401207/210ad2da-a8bd-4d79-8022-7aabbb4ea34e)
+
 
 La manera en la funciona es cuantificando el número de pixeles por cada valor considerado.
 
@@ -140,8 +141,9 @@ cv.waitKey(0)
 cv.destroyAllWindows()
 ```
 
-Una vez hecho esto podra ver como la imagen se aclara de la siguiente manera
+Una vez hecho esto podra ver como la imagen se aclara de la siguiente manera:
 
-![image](https://hackmd.io/_uploads/B1kZJM_pT.png)
+![image](https://github.com/Mercurio1509/Minitaller_OpenCV/assets/125401207/c3c64831-e16a-4fb8-b11b-52687909476c)
+
 
 5. Ahora usted descargue una imagen de internet y guardela en la misma carpeta del repositorio, para poder asignar la imagen dentro del código vaya al bloque 1 y dentro de la variable `src=cv.imread('imagen_equalizador.jpg')` cambie la sección donde dice *imagen_equalizador.jpg* por el nombre de su imagen, observe los resultados.
