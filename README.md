@@ -5,7 +5,7 @@ Para este minitaller aprenderemos algunas funciones básicas que podemos usar co
 * Jupyter Notebook.
 * Python 3.
 
-Primero debemos clonar este repositorio dentro de nuestra computadora para esto ejecute el comando `$ git clone https://github.com/Mercurio1509/VLSI_Tarea_1.git` dentro de la terminal. En Anaconda Navigator seleccione la opción de Jupyter Notebook y seleccione la opción que dice launch como se muestra en la siguiente imagen
+Primero debemos clonar este repositorio dentro de nuestra computadora para esto ejecute el comando `$ git clone https://github.com/Mercurio1509/Minitaller_OpenCV.git` dentro de la terminal. En Anaconda Navigator seleccione la opción de Jupyter Notebook y seleccione la opción que dice launch como se muestra en la siguiente imagen
 ![image](https://github.com/Mercurio1509/Minitaller_OpenCV/assets/125401207/d43ee758-2b62-40a9-93a3-d2aff1e1e8f0)
 
 
