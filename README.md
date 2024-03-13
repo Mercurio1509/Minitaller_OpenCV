@@ -20,6 +20,7 @@ Posterior a esto se abrirá nuestro navegador y las carpetas que tenemos en nues
 #Bloque 0
 #! pip install matplotlib
 #! pip install opencv-contrib-python
+#! pip install opencv-python
 ```
 
 3. Corra el bloque 1 donde se instalaran las librerias.
