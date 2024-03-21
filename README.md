@@ -38,12 +38,20 @@ import matplotlib.pyplot as plt
 img1 = cv2.imread('image1.jpg')
 plt.imshow(img1)
 plt.show()
+
+img1_rgb = cv2.cvtColor(img1, cv2.COLOR_BGR2RGB)
+plt.imshow(img1_rgb)
+plt.show()
 ```
 5. Corra el bloque 3 donde obtendrá otra imagen.
 ```ruby
 #Bloque 3
 img2 = cv2.imread('image2.jpg')
 plt.imshow(img2)
+plt.show()
+
+img2_rgb = cv2.cvtColor(img2, cv2.COLOR_BGR2RGB)
+plt.imshow(img2_rgb)
 plt.show()
 ```
 
@@ -79,6 +87,11 @@ output = cv2.addWeighted(img1, alpha, img2, beta, 0)
 cv2.imshow('Blended Image', output)
 plt.imshow(output)
 plt.show()
+
+img3_rgb = cv2.cvtColor(output, cv2.COLOR_BGR2RGB)
+plt.imshow(img3_rgb)
+plt.show()
+
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
